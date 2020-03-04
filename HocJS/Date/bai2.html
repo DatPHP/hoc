@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var d = new Date();
+        var enter = "<br>";
+
+        document.write("year: "+ d.getFullYear()+ enter);
+        document.write("month: "+ parseInt( d.getMonth()+ 1)  + enter);
+        document.write("day: "+ d.getDate()+ enter);
+        document.write("hour: "+ d.getHours()+ enter);
+        document.write("minutes: "+ d.getMinutes()+ enter);
+        document.write("mili second : "+ d.getMilliseconds()+ enter);
+        document.write("mili second : "+ d.getTime()+ enter);
+        document.write("mili second : "+ d.getTimezoneOffset()+ enter);
+
+
+        document.write("<hr>");
+        document.write("toLOcalString : "+ d.toLocaleString()+ enter);
+        document.write("toutcString : "+ d.toUTCString()+ enter);
+        document.write("toTimeString : "+ d.toTimeString()+ enter);
+        document.write("toString : "+ d.toString()+ enter);
+    </script>
+</body>
+</html>

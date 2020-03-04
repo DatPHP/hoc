@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duyệt mảng lồng JavaScript </title>
+</head>
+<body>
+    <script>
+        var enter = "<br/>";
+        var student = Array(
+            ["NGuyen Van A ", [7, 6, 9]],
+            ["NGuyen Van B ", [8, 7, 9]],
+            ["NGuyen Van C ", [5, 10, 7]],
+            ["NGuyen Van D ", [10, 6, 8]],
+        )
+        for ( x in student)
+        {
+          var list = student[x][1];
+          var point = 0;
+          for ( y in list)
+          {
+              point+= list[y];
+          }
+          student[x][1] = Math.floor(point/student[x][1].length);
+          document.write(student[x]+ enter );
+        }
+
+    </script>
+    
+</body>
+</html>

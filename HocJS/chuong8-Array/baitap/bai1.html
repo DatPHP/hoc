@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /* loai phan tu trung nhau trong mang 
+    var newArr 
+
+    Duyệt Arr kiểm tra phần tử có tồn tại trong mảng newArr ==> newArr.push ();
+
+    */
+var arr = new Array (1,2,3,3,4,5,5,6,6,7,8,9);
+var newArr = [];
+var enter = "<br / > ";
+
+for( x in arr)
+{
+    if (newArr.indexOf(arr[x]) < 0)
+    {
+       newArr.push(arr[x]);
+    }
+}
+
+//arr = newArr; mang arr cũng được loại bỏ phần tử trùng 
+document.write(" array is: "+ arr+ enter);
+document.write("New array is: " + newArr);
+</script>
+</body>
+</html>

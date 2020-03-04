@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegExp </title>
+</head>
+
+<body>
+    <script>
+        var enter = "<br>";
+        // tha so thu 2: modifier 
+        /*
+
+        i: KHong phan biet hoa thuong 
+        g: tra ve tat ca cac gia tri phu hop 
+        m: thuc hien tren tat ca cac dong 
+        */
+        var str = "JavaScript is so easy!!!! JavaScript JavaScript ";
+        var patt = /javaScript/i;
+        //document.write(str.match('JAVASCRIPT'));
+        document.write(str.match(patt));
+        document.write(enter);
+        var patt2 = /javaScript/img;
+        document.write(str.match(patt2));
+    </script>
+</body>
+
+</html>

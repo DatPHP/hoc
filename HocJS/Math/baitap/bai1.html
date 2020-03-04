@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .content
+        {
+            margin : 10px auto;
+            text-align: center;
+            width:600px;
+            height:400px
+
+        }
+        .content input[type = button]
+        {
+          padding: 3px 8px;
+          margin-bottom: 10px;
+        }
+        .content #area_image
+        {
+            border: 2px solid ;
+            padding: 10px;
+            display: inline-block;
+        
+
+        }
+        #show
+        {
+
+            width:50%; height:50%
+
+        }
+    </style>
+
+    <script>
+var listImage = new Array();
+listImage[0] = "./image/picture_1.jpg";
+listImage[1] = "./image/picture_2.jpg";
+listImage[2] = "./image/picture_3.jpg";
+listImage[3] = "./image/picture_4.jpg";
+listImage[4] = "./image/picture_5.jpg";
+listImage[5] = "./image/picture_6.jpg";
+document.write (Math.floor(Math.random()*listImage.length))
+
+function showImage()
+{
+    var index = Math.floor(Math.random()*listImage.length);
+    var result ='<image id ="show" src = "'+listImage[ index ] +'"/>';
+    document.getElementById("area_image").innerHTML = result;
+}
+
+    </script>
+</head>
+<body>
+    <div class = "content">
+        <input type = "button" value = "Random Image" onclick ="showImage();">
+        <div id = "area_image">
+            <image src ="./image/picture_5.jpg" style="width:50%; height:50%"></image>
+
+        </div>
+    </div>
+    
+</body>
+</html>

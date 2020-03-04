@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+   // var fullName = "Nguyen Van Dat";
+   var enter = "<br>";
+
+   String.prototype.plitName = function()
+   {
+    
+    var spaceFirst = this.indexOf(" ");
+    var spaceEnd = this.lastIndexOf(" ");
+ //  document.write(spaceFirst);
+  // document.write(spaceEnd);
+   var result = "";
+   var firstName = this.slice(0, spaceFirst);
+   var midleName = this.slice(spaceFirst, spaceEnd);
+   var lastName = this.slice( spaceEnd);
+    result =  document.write("first name: " + firstName + enter );
+    result += document.write("Midle name: "+ midleName + enter );
+    result += document.write("last name: " + lastName + enter ) ;
+     return result;
+   }
+  
+ 
+  // document.write("Result: "+ fullname.splitName());
+
+function splitName()
+{
+    var fullname = new String();
+    fullname = document.getElementById("fullname").value;
+    alert(fullname);
+    document.getElementById("result").innerHTML = fullname.plitName();
+}
+
+</script>
+
+<div class = "container">
+  <input type = "text" name = "fullname" id = "fullname" />
+  <input type = "button" name = "Submit" id = "submit" onclick = "splitName();" />
+</div>
+<div id ="result"></div>
+    
+</body>
+</html>

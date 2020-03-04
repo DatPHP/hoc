@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellcome to String JavaSCRIPT </title>
+</head>
+<body>
+<script>
+    var enter = "<br/>";
+    var str = "JavaScript is very very ";
+    /*
+    JavaScript 
+    0123456789 
+    JavaScript is very very
+    012345678901234
+    */ 
+
+    document.write( str + enter ); 
+    document.write( str[5] + enter ); // lấy phần tử của chuỗi 
+    // Ham chartArt có chức năng tuong tự  trả về giá trị phần tử thú n trong chuỗi 
+    document.write( str.charAt(5) + enter ); 
+
+
+    var str2  = " is easy! ";
+    document.write( str.concat(" ", str2) + enter ); 
+    // trả về chỉ số đầu tiên của chuỗi xuất hiện trong chuổi  
+    document.write( str.indexOf("very") + enter ); 
+
+
+
+</script>
+</body>
+</html>

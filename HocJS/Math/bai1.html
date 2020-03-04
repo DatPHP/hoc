@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        // math.abs(n)
+        var n = new Number(-12.7);
+        var enter = "<br>";
+        document.write("input: " + n+ enter );
+        document.write("Math.abs(n): " + Math.abs(n)+ enter);
+        
+        // math.max(n1, n2, n3, n4, .... )
+
+        //case 1
+        document.write("Max(1,29,23.5, 7.3,22): " + Math.max(1,29,23.5, 7.3,22)+ enter);
+        // case 2
+        var arrNumber = [29,23.5, 7.3,22];
+        document.write("Max:[,29,23.5, 7.3,22] " + Math.max.apply(Math,arrNumber)+ enter);
+
+         // math.max(n1, n2, n3, n4, .... )
+
+        //case 1
+        document.write("Min (1,29,23.5, 7.3,22): " + Math.min(1,29,23.5, 7.3,22)+ enter);
+        // case 2
+        var arrNumber = [29,23.5, 7.3,22];
+        document.write("Min:[,29,23.5, 7.3,22] " + Math.min.apply(Math,arrNumber)+ enter);
+
+        // pow()
+        document.write("Math.pow(4,2) <===> 4^2 =  " + Math.pow(4,2)+ enter);
+        //random 
+        document.write("Math.random() will return random value with range from 0 to 1  <===> 4^2 =  " + Math.random()+ enter);
+        //sqrt()
+        document.write("Math.sqrt(n) <===> can bac hai cua n =  " + Math.sqrt(25)+ enter);
+
+
+        // round 
+
+        var number = 12345.2356748; 
+
+        document.write("Number:   " + number + enter);
+        document.write("Math.round(n)  =  " + Math.round(number)+ enter);
+
+        //ceil
+        document.write("Math.round(n)  =  " + Math.ceil(number)+ enter); 
+        //floor  
+        document.write("Math.round(n)  =  " + Math.floor(number)+ enter);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAai 2 - cachs 2 - Tim chu so lon nhat cua so tu nhien n </title>
+</head>
+<body>
+    <script>
+
+        var n = new Number(13859) ; 
+        var m = n;
+        /* 
+         1385 =>  max = 5 , n = 138 
+         138  => max = 8, n = 13
+         13 => max = 8 , n = 1
+         1 => max = 8
+        */
+        
+        Number.prototype.getMaxDigit = function()
+        {
+            var number = this.valueOf();
+            var max = 0;
+        while(number > 0)
+        {
+            var donvi = n % 10;
+           // if ( max < donvi) max = donvi;
+           max = (donvi > max)? donvi:max;
+            n = (number -donvi) /10;
+        }
+        return max;
+
+        }
+        document.write("Chu so lon nhat cua "+ n.getMaxDigit() + " la "+ max);
+
+
+    </script>
+    
+</body>
+</html>

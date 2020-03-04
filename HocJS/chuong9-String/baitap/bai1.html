@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+   var fullName = "Nguyen Van Dat";
+   var enter = "<br>";
+   var spaceFirst = fullName.indexOf(" ");
+   var spaceEnd = fullName.lastIndexOf(" ");
+   document.write(spaceFirst);
+   document.write(spaceEnd);
+   var firstName = fullName.slice(0, spaceFirst);
+   document.write(firstName + enter);
+   var midleName = fullName.slice(spaceFirst, spaceEnd);
+   document.write(midleName + enter );
+   var lastName = fullName.slice( spaceEnd);
+   document.write(lastName + enter );
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 1 - Method of number </title>
+</head>
+<body>
+    <script>
+        var n = 1234.2354252;
+        var enter = "<br>";
+        var m = n.toFixed(2);
+        document.write("input: "+n + enter);
+        document.write("n.toFixed:  "+n.toFixed(2) + enter);
+        document.write("typeof n.toFixed:  "+ typeof m + enter);
+        document.write("typeof n.toFixed:  "+  m.constructor + enter);
+        document.write("n.toPrecision:  "+n.toPrecision(4) + enter);
+
+        document.write(" n.valueOf:  "+ n.valueOf() + enter);
+        document.write("typeof n.toFixed:  "+ typeof(n.valueOf()) + enter);
+
+        document.write(" n.valueOf:  "+ n.toString() + enter);
+        document.write("typeof n.toFixed:  "+ typeof(n.toString()) + enter);
+
+    </script>
+    
+</body>
+</html>

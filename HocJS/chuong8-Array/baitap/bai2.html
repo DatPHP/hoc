@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+/* mảng có chỉ số là kí tự không phải số . Thành lập mảng đối 
+tương Student và in ra các thuộc tính của nó về id, Name,Birday.
+
+ */ 
+ var enter = "<br />";
+ var student = {"id":1513039, "firstName":"Dat", "lastName": "NGuyen Van", "birthDay": 1996};
+for (x in student)
+{
+ document.writeln(student[x]+ enter );
+}
+document.writeln("<br>");
+ var Result = { };
+ Result["MSSV"] = student["id"];
+ Result["fullName"] = student["firstName"] + student["lastName"];
+ Result["age"] = 2020 - student["birthDay"];
+ document.writeln ("Information student : "+enter );
+for ( x in Result)
+{
+    document.write ( x + ": " + Result[x] + enter );
+}
+
+</script>
+    
+
+    
+</body>
+</html>
