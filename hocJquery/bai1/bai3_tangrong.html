@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        #image.v1
+        {
+            width: 200px;
+        }
+        #image.v2
+        {
+            width: 400px;
+        }
+        #image.v3
+        {
+            width: 700px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+        
+        var change = document.getElementById("but");
+        change.onclick = changeIMage;
+        })
+    </script>
+    <button  id ="but"> CHange </button>
+    <img id ="image" class = "v1" src="./image/picture_13.jpg" alt="Flowers in Chania">
+
+    <script>
+        var key = 1;
+        function changeIMage()
+        {
+        
+            if( key == 1)
+            {
+                $("#image").addClass("v2");
+                key = 2;
+            }
+            else if(key == 2)
+            {
+                $("#image").addClass("v3");
+                key = 3;
+
+            }
+            else
+            {
+                $("#image").removeClass("v2").removeClass("v3") ;
+                key = 1;
+            }
+
+            var length_image = $("#image").css("width");
+            alert(length_image);
+        }
+    </script>
+    
+</body>
+</html>
